@@ -4,6 +4,8 @@
 #include <QWidget>
 #include <sapcore.h>
 #include <commonscreen.h>
+#include <QTreeWidgetItem>
+#include <QMessageBox>
 
 namespace Ui {
 class Application;
@@ -52,6 +54,16 @@ private slots:
     void on_buttonBox_accepted();
 
     void on_commandLinkButton_clicked();
+
+    void on_toolButton_triggered(QAction *arg1);
+
+
+
+    void on_treeWidget_currentItemChanged(QTreeWidgetItem *current, QTreeWidgetItem *previous);
+
+    void on_treeWidget_clicked(const QModelIndex &index);
+
+    void on_treeWidget_itemClicked(QTreeWidgetItem *item, int column);
 
 private:
     Ui::Application *ui;

@@ -817,11 +817,9 @@ background: none;
        <height>251</height>
       </rect>
      </property>
-     <column>
-      <property name="text">
-       <string notr="true">1</string>
-      </property>
-     </column>
+     <attribute name="headerVisible">
+      <bool>false</bool>
+     </attribute>
     </widget>
     <widget class="QRadioButton" name="radioButton">
      <property name="geometry">
@@ -1059,8 +1057,8 @@ background: none;
   </connection>
  </connections>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_3"/>
  </buttongroups>
 </ui>

@@ -122,7 +122,8 @@ void Application::on_toolButton_clicked()
 {
 
     ui->treeWidget->setColumnCount(1);
-    ui->treeWidget->setHeaderLabel("Header");
+//    ui->treeWidget->setHeaderLabel("Header");
+    ui->treeWidget->setHeaderLabel("");
 
     QTreeWidgetItem *root=new QTreeWidgetItem;
     root->setText(0,"10");
@@ -153,3 +154,33 @@ void Application::on_commandLinkButton_clicked()
 {
      qDebug()<<"Command 1 clicked";
 }
+
+void Application::on_toolButton_triggered(QAction *arg1)
+{
+
+}
+
+
+
+void Application::on_treeWidget_currentItemChanged(QTreeWidgetItem *current, QTreeWidgetItem *previous)
+{
+
+}
+
+void Application::on_treeWidget_clicked(const QModelIndex &index)
+{
+//    qDebug()<<index.column();
+}
+
+void Application::on_treeWidget_itemClicked(QTreeWidgetItem *item, int column)
+{
+
+    qDebug()<<item->text(column);
+//    QString msg;
+//    msg="THis is information that you have pressed <br>";
+//    msg+=item->text(column);
+    QMessageBox::information(this,"Title",("THis is information that you have pressed <br>"+item->text(column)),"ok","matlab?");
+int reply=QMessageBox::warning(this,"title","danger","but1","but2","but3");
+qDebug()<<reply;
+}
+
