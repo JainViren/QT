@@ -4,6 +4,8 @@
 #include <QWidget>
 #include <sapcore.h>
 #include <qfont.h>
+#include "QTimer"
+
 namespace Ui {
 class Application;
 }
@@ -15,6 +17,8 @@ class Application : public QWidget
 public:
     explicit Application(QWidget *parent = 0);
     ~Application();
+public slots:
+    void t1();
 
 private slots:
     void on_spinBox_valueChanged(int arg1);
@@ -27,11 +31,13 @@ private slots:
 
     void on_timeEdit_userTimeChanged(const QTime &time);
 
-
     void on_dateEdit_userDateChanged(const QDate &date);
+
 
 private:
     Ui::Application *ui;
+    QTimer *timer1;
+
 
 };
 

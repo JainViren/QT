@@ -8,6 +8,9 @@ Application::Application(QWidget *parent) :
     ui->setupUi(this);
     // ADD USER CODE HERE
     ui->label->setText("NLALNO P RAGIJP poersoijniuwetiojhp;hg eajklnbilfg ");
+    timer1=new QTimer(this);
+    connect(timer1,SIGNAL(timeout()),this,SLOT(t1()));
+
 
 }
 
@@ -15,6 +18,11 @@ Application::Application(QWidget *parent) :
 Application::~Application()
 {
     delete ui;
+}
+
+void Application::t1()
+{
+    ui->label->setText("Timer Working");
 }
 
 void Application::on_spinBox_valueChanged(int arg1)
@@ -27,6 +35,7 @@ void Application::on_dial_valueChanged(int value)
 {
     qDebug()<<value;
     ui->lcdNumber->display(value);
+    timer1->start(2000);
 }
 
 void Application::on_fontComboBox_currentFontChanged(const QFont &f)
