@@ -17,3 +17,10 @@ I will keep all my learning point in every folder and some points that I have le
 QT can be used for making application for windows as well as mobile devices but I have used it for making application for embedded devices.
 
 You can use other websites for downloading icon, background-images, svg and many more.
+
+Folder sequence for learning:
+1) UsingStackWidget
+2) InsertStackWidget
+3) Containers
+4) MyFirstApp
+   
