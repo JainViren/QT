@@ -42,6 +42,13 @@ border-style: outset;
 color: white;
 }
 
+QMessageBox
+{
+background-color: lightblue;
+border:5px  white;
+border-style:inset;
+border-radius:20px;
+}
 
 QPushButton
 {
@@ -696,8 +703,8 @@ text - shadow:10px 10px black;
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
+     <x>20</x>
+     <y>80</y>
      <width>61</width>
      <height>61</height>
     </rect>
