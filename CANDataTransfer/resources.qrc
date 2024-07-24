@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+	<file>Images/Blue.png</file>
+	<file>Images/buttonDown_green.png</file>
+	<file>Images/buttonDown.png</file>
+	<file>Images/buttonUp_Green.png</file>
+	<file>Images/buttonUp.png</file>
+	<file>Images/Green.png</file>
+	<file>Images/Grey.png</file>
+	<file>Images/ok.png</file>
+	<file>Images/Purple.png</file>
+	<file>Images/Red.png</file>
+	<file>Images/Yellow.png</file>
+    </qresource>
+</RCC>
